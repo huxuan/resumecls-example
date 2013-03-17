@@ -4,8 +4,8 @@ Examples to typeset resume in both Chinese and English by using resumecls
 
 ## Preview
 
-- resume-en.pdf: https://github.com/huxuan/resumecls-example/blob/master/resume-en.pdf?raw=true
-- resume-zh.pdf: https://github.com/huxuan/resumecls-example/blob/master/resume-zh.pdf?raw=true
+- [resume-en.pdf](https://github.com/huxuan/resumecls-example/blob/master/resume-en.pdf?raw=true)
+- [resume-zh.pdf](https://github.com/huxuan/resumecls-example/blob/master/resume-zh.pdf?raw=true)
 
 ## Workflow
 
