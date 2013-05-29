@@ -26,7 +26,7 @@ $(RESUMEZH).pdf: $(RESUMEZH).tex $(RESUMEZH).bbl
 	xelatex $(RESUMEZH).tex
 	xelatex $(RESUMEZH).tex
 
-$(RESUMEZH).bbl:
+$(RESUMEZH).bbl: $(RESUME).bib
 	xelatex $(RESUMEZH).tex
 	-bibtex $(RESUMEZH)
 
@@ -38,7 +38,7 @@ $(RESUMEEN).pdf: $(RESUMEEN).tex $(RESUMEEN).bbl
 	xelatex $(RESUMEEN).tex
 	xelatex $(RESUMEEN).tex
 
-$(RESUMEEN).bbl:
+$(RESUMEEN).bbl: $(RESUME).bib
 	xelatex $(RESUMEEN).tex
 	-bibtex $(RESUMEEN)
 
