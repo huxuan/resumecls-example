@@ -3,16 +3,18 @@
 # | Author: huxuan
 # | E-mail: i(at)huxuan.org
 # | Created: 2012-12-18
-# | Last modified: 2013-03-16
+# | Last modified: 2020-04-16
 # | Description:
 # |     Makefile for resumecls examples
 # |
-# | Copyrgiht (c) 2012-2013 by huxuan. All rights reserved.
+# | Copyrgiht (c) 2012-2020 by huxuan. All rights reserved.
 # +-----------------------------------------------------------------------------
 
-include config.mk
-
 .PHONY: resume resume-zh resume-en clean depclean
+
+RESUME=resume
+RESUMEZH=resume-zh
+RESUMEEN=resume-en
 
 # resume
 

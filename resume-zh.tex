@@ -1,102 +1,91 @@
 % !Mode:: "TeX:UTF-8"
 % +-----------------------------------------------------------------------------
-% | File: resume-zh
+% | File: resume-zh.tex
 % | Author: huxuan
 % | E-mail: i(at)huxuan.org
 % | Created: 2012-12-18
-% | Last modified: 2013-03-16
+% | Last modified: 2020-04-16
 % | Description:
 % |     A Chinese Resume Example in LaTeX based on resumecls
 % |
-% | Copyrgiht (c) 2012-2013 by huxuan. All rights reserved.
+% | Copyright (c) 2012-2020 by huxuan. All rights reserved.
 % +-----------------------------------------------------------------------------
 
 \documentclass[color]{resumecls}
 
-\ctexset{today=small}
+\include{resume-common}
 
 \name{姓名}
 \organization{单位、学校或组织}
 \address{地址，邮编}
-\mobile{+86 XXX XXXX XXXX}
-\mail{i@example.com}
-\homepage{http://example.com}
 \leftfooter{最后更新: \today}
 \rightfooter{\url{http://example.com/resume-zh.pdf}}
 
+\ctexset{today=small}
+
 \begin{document}
-
 \begin{table}
-
 \maketitle
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{经历(紧凑版)}
+\entry{0em}{Xlr}{{\bfseries 组织} \quad 部门 & 职位 & 起止时间}
+\entry{2em}{X}{%
+    描述1 \\
+    描述2 \\
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{教育经历}
-\entry{2em}{Xrp{8em}}{%
-    \heiti{学校} & 城市 & 起止时间 \\
+\entry{0em}{Xrr}{{\bfseries 学校} & 城市 & 起止时间}
+\entry{2em}{lXX}{%
+    学位1 & 学院1 & 专业1 \\
+    学位2 & 学院2 & 专业2 \\
 }
-\entry{4em}{lXX}{%
-    学位 & XX学院 & XX专业 \\
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{科研经历}
-\entry{2em}{Xp{8em}}{%
-    \heiti{地点} & 起止时间 \\
+\entry{0em}{Xr}{{\bfseries 地点} & 起止时间}
+\entry{2em}{X}{实验室 \quad 职位}
+\entry{4em}{X}{%
+    描述 \\
+    这里可以使用bibtex，如\cite{label} \\
 }
-\entry{4em}{X}{实验室名称 \quad 职位}
-\entry{6em}{X}{%
-    研究方向和具体内容 \\
-    发表成果（亦可使用bibtex，像这样\cite{label}，见文档最后注释内容） \\
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{工作经历}
-\entry{2em}{Xp{8em}}{%
-    \heiti{单位名称} & 起止时间 \\
+\entry{0em}{Xr}{{\bfseries 组织} & 起止时间}
+\entry{2em}{X}{部门 \quad 职位}
+\entry{4em}{X}{%
+    描述 \\
 }
-\entry{4em}{X}{部门 \quad 职位}
-\entry{6em}{X}{%
-    负责的具体事项 \\
-    工作的具体内容 \\
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{校园经历}
-\entry{2em}{Xp{8em}}{%
+\entry{0em}{Xr}{%
     经历1 & 起止时间 \\
     经历2 & 起止时间 \\
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{获得荣誉}
-\entry{2em}{Xr}{%
+\entry{0em}{Xr}{%
     荣誉1 & 颁发时间 \\
     荣誉2 & 颁发时间 \\
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{专业技能}
-\entry{2em}{lX}{%
+\entry{0em}{lX}{%
     精通 & XXX \\
     熟悉 & XXX \\
     掌握 & XXX \\
     使用 & XXX \\
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{其他列举事项-如个人爱好，网络资料等}
-\entry{2em}{lX}{%
+\entry{0em}{lX}{%
     标签1 & 标签对应内容 \\
     标签2 & 标签对应内容 \\
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 如果不需要发表成果，注释这一段即可
 \heading{附：发表成果}
 \vspace{-6em}
 \bibliography{resume}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{table}
 \end{document}
