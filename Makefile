@@ -3,7 +3,7 @@
 # | Author: huxuan
 # | E-mail: i(at)huxuan.org
 # | Created: 2012-12-18
-# | Last modified: 2020-04-16
+# | Last modified: 2020-04-20
 # | Description:
 # |     Makefile for resumecls examples
 # |
