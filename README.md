@@ -1,21 +1,23 @@
 # resumecls-example
 
-Examples to typeset resume both in Chinese and English with resumecls.
+Examples to typeset resume both in Chinese and English with [resumecls](https://ctan.org/pkg/resumecls).
 
-## Preview
+## Online Preview & Edit (with Overleaf Template)
 
-An online version for preview is available on [overleaf](https://www.overleaf.com/read/yrtmzwhtzwtz).
+An overleaf template is available [here](https://www.overleaf.com/latex/templates/resumecls-example/xncvhkjgyjvf) for preview.
 
-## Workflow
+You can also edit it directly on the overleaf.
+
+## Offline Usage
 
 ```shell
 git clone git://github.com/huxuan/resumecls-example.git
 cd resumecls-example
 # Modify resume-en.tex resume-en.tex resume.bib (bib is optional).
-# Compile via Makefile or LaTeX command (More info below).
+# Compile via Makefile or LaTeX commands (More info below).
 ```
 
-## Compile
+## Offline Compile
 
 ### Makefile
 

@@ -10,7 +10,7 @@
 # | Copyrgiht (c) 2012-2020 by huxuan. All rights reserved.
 # +-----------------------------------------------------------------------------
 
-.PHONY: resume resume-zh resume-en clean depclean
+.PHONY: resume resume-zh resume-en dist clean distclean
 
 RESUME=resume
 RESUMEZH=resume-zh
@@ -44,7 +44,9 @@ $(RESUMEEN).bbl: $(RESUME).bib
 	xelatex $(RESUMEEN).tex
 	-bibtex $(RESUMEEN)
 
-# clean & depclean
+# dist & clean
+
+dist: distclean resume
 
 clean:
 	-@rm -f \
@@ -55,6 +57,6 @@ clean:
 		*.log \
 		*.out
 
-depclean: clean
+distclean: clean
 	-@rm -f \
 		*.pdf
